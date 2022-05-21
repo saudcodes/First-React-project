@@ -7,6 +7,7 @@ import Counter from './components/Counter';
 import Overview from './components/Overview';
 import Funclinks from './components/Funclinks';
 import Test from './components/Test';
+import NewForm from './components/NewForm'
 
 
 //let name = prompt("What is your name?");
@@ -22,6 +23,7 @@ function App() {
       <Overview />
       <Funclinks />
       <Test />
+      <NewForm />
     </>
 
   );
