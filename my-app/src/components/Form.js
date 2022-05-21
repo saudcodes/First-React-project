@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function Form(props) {
     const [text, setText] = useState("dd")
     const convert = () => {
-        let newText = text.toUpperCase()
+        let newText = text.value + "jdf"
         setText(newText)
     }
     const handleChange = (event) => {
