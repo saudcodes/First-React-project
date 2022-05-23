@@ -1,14 +1,31 @@
 import React, { useState } from "react";
 
-const NewForm = () => {
+const NewForm = (props) => {
     const [text, setText] = useState("default")
 
-    const convert = () => {
+    const upperCase = (e) => {
+        e.preventDefault()
         let a = text.toUpperCase()
         setText(a)
     }
+    const lowerCase = (e) => {
+        e.preventDefault()
+        let a = text.toLowerCase()
+        setText(a)
+    }
+    const capitalize = (e) => {
+        e.preventDefault()
+        let a = text.charAt(0).toUpperCase() + text.slice(1)
+        setText(a)
+    }
+    const activateText = () => {
+        let a = text
+        return a
 
+
+    }
     const handleChange = (event) => {
+
         setText(event.target.value)
 
     }
@@ -16,6 +33,7 @@ const NewForm = () => {
     return (
         <>
             <div className="container">
+                <h2>{text}</h2>
                 <form class="was-validated">
                     <div className="mt-5">
                         <label htmlFor="validationTextarea" className="form-label">Textarea</label>
@@ -25,8 +43,14 @@ const NewForm = () => {
                         </div>
 
                     </div>
+
+                    <button className="btn btn-primary" onClick={upperCase} type="submit">to uppercase</button>
+                    <button className="btn btn-primary" onClick={lowerCase} type="submit">to lowercase</button>
+                    <button className="btn btn-primary" onClick={capitalize} type="submit">to capitalize</button>
+                    <button className="btn btn-primary" onClick={activateText} type="submit">Preview Text</button>
+
+
                 </form>
-                <button className="btn btn-primary" onClick={convert} type="submit">Submit form</button>
             </div>
         </>
     )
