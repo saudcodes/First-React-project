@@ -18,10 +18,11 @@ const NewForm = (props) => {
         let a = text.charAt(0).toUpperCase() + text.slice(1)
         setText(a)
     }
-    const activateText = () => {
+    const activateText = (e) => {
+        e.preventDefault()
         let a = text
-        return a
 
+        console.log(a)
 
     }
     const handleChange = (event) => {
@@ -34,7 +35,7 @@ const NewForm = (props) => {
         <>
             <div className="container">
                 <h2>{text}</h2>
-                <form class="was-validated">
+                <form className="was-validated">
                     <div className="mt-5">
                         <label htmlFor="validationTextarea" className="form-label">Textarea</label>
                         <textarea value={text} onChange={handleChange} className="form-control  is-invalid" rows="4" id="validationTextarea" placeholder="Required example textarea" required></textarea>
