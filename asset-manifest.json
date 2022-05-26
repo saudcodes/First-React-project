@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/npm%20install%20gh-pageFirst-React-project/static/css/main.073c9b0a.css",
+    "main.js": "/npm%20install%20gh-pageFirst-React-project/static/js/main.e7d44961.js",
+    "static/js/787.28cb0dcd.chunk.js": "/npm%20install%20gh-pageFirst-React-project/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/npm%20install%20gh-pageFirst-React-project/index.html",
+    "main.073c9b0a.css.map": "/npm%20install%20gh-pageFirst-React-project/static/css/main.073c9b0a.css.map",
+    "main.e7d44961.js.map": "/npm%20install%20gh-pageFirst-React-project/static/js/main.e7d44961.js.map",
+    "787.28cb0dcd.chunk.js.map": "/npm%20install%20gh-pageFirst-React-project/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e7d44961.js"
+  ]
+}
